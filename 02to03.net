@@ -1,7 +1,7 @@
 (netlist " "
   (compinst "C1"
     (patternName "CAP_0805")
-    (compvalue "10uF"))
+    (compvalue "10uF__25V"))
   (compinst "C2"
     (patternName "CAP_1210")
     (compvalue "47uF"))
@@ -12,9 +12,6 @@
     (patternName "CAP_0402")
     (compvalue "100pF"))
   (compinst "C5"
-    (patternName "CAP_0402")
-    (compvalue "1uF"))
-  (compinst "C6"
     (patternName "CAP_0402")
     (compvalue "1uF"))
   (compinst "C7"
@@ -37,7 +34,7 @@
     (compvalue "NO_POP"))
   (compinst "C13"
     (patternName "CAP_0402")
-    (compvalue "NO_POP"))
+    (compvalue "100nF"))
   (compinst "C14"
     (patternName "CAP_0402")
     (compvalue "18pF"))
@@ -46,10 +43,10 @@
     (compvalue "18pF"))
   (compinst "C16"
     (patternName "CAP_0402")
-    (compvalue "13pF"))
+    (compvalue "100nF"))
   (compinst "C17"
     (patternName "CAP_0402")
-    (compvalue "13pF"))
+    (compvalue "100nF"))
   (compinst "C18"
     (patternName "IND_0402")
     (compvalue "10pF"))
@@ -67,7 +64,7 @@
     (compvalue "100nF"))
   (compinst "C23"
     (patternName "CAP_0402")
-    (compvalue "NO_POP"))
+    (compvalue "100nF"))
   (compinst "C24"
     (patternName "CAP_0402")
     (compvalue "100nF"))
@@ -79,10 +76,31 @@
     (compvalue "100nF"))
   (compinst "C27"
     (patternName "CAP_0402")
-    (compvalue "NO_POP"))
+    (compvalue "100nF"))
   (compinst "C28"
     (patternName "IND_0402")
     (compvalue "DNP"))
+  (compinst "C29"
+    (patternName "CAP_0402")
+    (compvalue "10nF"))
+  (compinst "C30"
+    (patternName "RES_0402")
+    (compvalue "100nF"))
+  (compinst "C31"
+    (patternName "CAP_0805")
+    (compvalue "22uF"))
+  (compinst "C32"
+    (patternName "RES_0402")
+    (compvalue "100nF"))
+  (compinst "C33"
+    (patternName "CAP_0402")
+    (compvalue "100nF"))
+  (compinst "C34"
+    (patternName "CAP_0402")
+    (compvalue "100nF"))
+  (compinst "C35"
+    (patternName "CAP_0402")
+    (compvalue "100nF"))
   (compinst "D1"
     (patternName "DIO_0603")
     (compvalue "GREEN"))
@@ -102,17 +120,14 @@
     (patternName "SOT143")
     (compvalue "PRTR5V0U2X"))
   (compinst "D7"
-    (patternName "SOD-323")
-    (compvalue "PESD3V3L1BA"))
+    (patternName "SOD-523")
+    (compvalue "BAT43XV2"))
   (compinst "J1"
     (patternName "USB__MICRO")
     (compvalue "USB_MICRO"))
   (compinst "J2"
     (patternName "CORTEX_DEBUG")
     (compvalue "CORTEX_DEBUG_"))
-  (compinst "J3"
-    (patternName "Boot_selector_switch")
-    (compvalue "Boot_switch"))
   (compinst "J4"
     (patternName "Module_header_(Tessel_side)")
     (compvalue "Module_header_(Tessel_Side)"))
@@ -137,9 +152,6 @@
   (compinst "J11"
     (patternName "PB0_breakout")
     (compvalue "PB0"))
-  (compinst "L1"
-    (patternName "IND_0603")
-    (compvalue "600uH"))
   (compinst "L2"
     (patternName "IND_0603")
     (compvalue "600uH"))
@@ -149,21 +161,30 @@
   (compinst "L4"
     (patternName "IND_0402")
     (compvalue "2_2nH"))
+  (compinst "L5"
+    (patternName "SRR6038")
+    (compvalue "2_2uH"))
   (compinst "M1"
     (patternName "8-WSON")
     (compvalue "FLASH_S25FL256S"))
   (compinst "M2"
     (patternName "ISSI_54-BGA")
     (compvalue "SDRAM_MT48LC32M8A2"))
+  (compinst "T7"
+    (patternName "testpoint_-_1_5mm_TH")
+    (compvalue "Testpoint"))
   (compinst "Q1"
-    (patternName "SOT23")
-    (compvalue "NTR2101P"))
+    (patternName "SC-70-6_dual")
+    (compvalue "SiA931DJ"))
   (compinst "R1"
     (patternName "RES_0402")
     (compvalue "12_0k"))
+  (compinst "R2"
+    (patternName "RES_0402")
+    (compvalue "100k"))
   (compinst "R3"
     (patternName "RES_0402")
-    (compvalue "300"))
+    (compvalue "1k"))
   (compinst "R4"
     (patternName "RES_0402")
     (compvalue "10k"))
@@ -172,22 +193,7 @@
     (compvalue "1k"))
   (compinst "R6"
     (patternName "RES_0402")
-    (compvalue "33k"))
-  (compinst "R7"
-    (patternName "RES_0402")
-    (compvalue "33k"))
-  (compinst "R8"
-    (patternName "RES_0402")
-    (compvalue "10K"))
-  (compinst "R9"
-    (patternName "RES_0402")
-    (compvalue "10K"))
-  (compinst "R10"
-    (patternName "RES_0402")
-    (compvalue "33k"))
-  (compinst "R11"
-    (patternName "RES_0402")
-    (compvalue "10k"))
+    (compvalue "100k"))
   (compinst "R12"
     (patternName "RES_0402")
     (compvalue "390"))
@@ -223,19 +229,40 @@
     (compvalue "47k"))
   (compinst "R23"
     (patternName "RES_0402")
-    (compvalue "300"))
+    (compvalue "100k"))
+  (compinst "R25"
+    (patternName "RES_0402")
+    (compvalue "1_8k"))
+  (compinst "R26"
+    (patternName "RES_0402")
+    (compvalue "1_8k"))
+  (compinst "R27"
+    (patternName "RES_0402")
+    (compvalue "100k"))
   (compinst "S1"
     (patternName "2-SMD_Button_TL1015AF160QG")
     (compvalue "2-SMD_Button_TL1015AF160QG"))
   (compinst "S2"
     (patternName "2-SMD_Button_TL1015AF160QG")
     (compvalue "2-SMD_Button_TL1015AF160QG"))
-  (compinst "T1"
-    (patternName "TESTPOINT")
+  (compinst "T2"
+    (patternName "testpoint_-_0_7mm_TH")
+    (compvalue "Testpoint"))
+  (compinst "T3"
+    (patternName "testpoint_-_0_7mm_TH")
+    (compvalue "Testpoint"))
+  (compinst "T4"
+    (patternName "testpoint_-_0_7mm_TH")
+    (compvalue "Testpoint"))
+  (compinst "T5"
+    (patternName "testpoint_-_0_7mm_TH")
+    (compvalue "Testpoint"))
+  (compinst "T6"
+    (patternName "testpoint_-_0_7mm_TH")
     (compvalue "Testpoint"))
   (compinst "U1"
-    (patternName "SOT89-5/6")
-    (compvalue "V__Reg__NCP694D33HT1G"))
+    (patternName "MLP-8")
+    (compvalue "FPF2702"))
   (compinst "U2"
     (patternName "180-BGA")
     (compvalue "LPC18X0FET180"))
@@ -246,26 +273,17 @@
     (patternName "WiFi_Antennae_(2450)")
     (compvalue "2450AT43A100"))
   (compinst "U5"
-    (patternName "8-son")
-    (compvalue "TPS2115A"))
+    (patternName "QFN-16/3x3x0_5")
+    (compvalue "TPS6213X"))
+  (compinst "U6"
+    (patternName "SOT23")
+    (compvalue "MIC803-26D2VM3"))
   (compinst "Y1"
     (patternName "CFPX-5")
     (compvalue "12MHz"))
-  (compinst "Y2"
-    (patternName "32kHz_Crystal_SMT")
-    (compvalue "32_kHz_Crystal_SMT"))
-  (compinst "R2"
-    (patternName "RES_0402")
-    (compvalue "14_0k"))
-  (compinst "R24"
-    (patternName "RES_0402")
-    (compvalue "10_0k"))
-  (compinst "R25"
-    (patternName "RES_0402")
-    (compvalue "1_8k"))
-  (compinst "R26"
-    (patternName "RES_0402")
-    (compvalue "1_8k"))
+  (compinst "T1"
+    (patternName "testpoint_-_1_5mm_TH")
+    (compvalue "Testpoint"))
   (net "3_3V"
     (node "C2" "1")
     (node "C7" "1")
@@ -275,6 +293,7 @@
     (node "C11" "1")
     (node "C12" "1")
     (node "C13" "1")
+    (node "C17" "1")
     (node "C20" "1")
     (node "C21" "1")
     (node "C22" "1")
@@ -283,6 +302,12 @@
     (node "C25" "1")
     (node "C26" "1")
     (node "C27" "1")
+    (node "C30" "1")
+    (node "C31" "1")
+    (node "C32" "1")
+    (node "C33" "1")
+    (node "C34" "1")
+    (node "C35" "1")
     (node "J2" "1")
     (node "J4" "2")
     (node "J5" "2")
@@ -291,6 +316,7 @@
     (node "J8" "12")
     (node "L2" "1")
     (node "L3" "1")
+    (node "L5" "2")
     (node "M1" "8")
     (node "M2" "A7")
     (node "M2" "B3")
@@ -302,17 +328,15 @@
     (node "R3" "1")
     (node "R4" "2")
     (node "R5" "1")
-    (node "R6" "1")
-    (node "R7" "1")
-    (node "R8" "1")
     (node "R14" "1")
     (node "R15" "2")
     (node "R19" "2")
     (node "R20" "1")
     (node "R21" "1")
     (node "R22" "1")
+    (node "R25" "2")
+    (node "R26" "2")
     (node "S2" "1")
-    (node "U1" "5")
     (node "U2" "B9")
     (node "U2" "E8")
     (node "U2" "D8")
@@ -322,22 +346,19 @@
     (node "U2" "K8")
     (node "U3" "19")
     (node "U3" "23")
-    (node "R25" "2")
-    (node "R26" "2"))
-  (net "5V"
-    (node "C1" "1")
-    (node "D6" "4")
-    (node "J8" "10")
-    (node "U1" "3")
-    (node "U1" "4")
-    (node "U2" "E1")
-    (node "U5" "7"))
+    (node "U5" "14")
+    (node "U6" "3"))
   (net "5V_USB"
+    (node "D6" "4")
     (node "J1" "1")
-    (node "U5" "8")
-    (node "R2" "1"))
+    (node "Q1" "2")
+    (node "Q1" "3")
+    (node "Q1" "7")
+    (node "R23" "2")
+    (node "U1" "4")
+    (node "U2" "E1"))
   (net "ADC_1"
-    (node "J8" "7")
+    (node "J8" "4")
     (node "U2" "B6"))
   (net "ADC_2"
     (node "J8" "8")
@@ -378,10 +399,6 @@
   (net "CC_WL_EN"
     (node "U3" "5")
     (node "U3" "7"))
-  (net "D1"
-    (node "U5" "3")
-    (node "R2" "2")
-    (node "R24" "1"))
   (net "DBGEN"
     (node "R4" "1")
     (node "U2" "K4"))
@@ -393,7 +410,7 @@
     (node "R18" "2"))
   (net "EMC_A0"
     (node "M2" "H7")
-    (node "R9" "1")
+    (node "T5" "1")
     (node "U2" "G14"))
   (net "EMC_A1"
     (node "M2" "H8")
@@ -412,20 +429,19 @@
     (node "U2" "L1"))
   (net "EMC_A6"
     (node "M2" "H3")
-    (node "R7" "2")
+    (node "T2" "1")
     (node "U2" "N1"))
   (net "EMC_A7"
     (node "M2" "H2")
-    (node "R11" "1")
+    (node "T6" "1")
     (node "U2" "N2"))
   (net "EMC_A8"
-    (node "J3" "2")
     (node "M2" "H1")
-    (node "R10" "1")
+    (node "T4" "1")
     (node "U2" "H14"))
   (net "EMC_A9"
     (node "M2" "G3")
-    (node "R6" "2")
+    (node "T3" "1")
     (node "U2" "G12"))
   (net "EMC_A10"
     (node "M2" "H9")
@@ -527,7 +543,6 @@
     (node "C3" "2")
     (node "C4" "2")
     (node "C5" "2")
-    (node "C6" "2")
     (node "C7" "2")
     (node "C8" "2")
     (node "C9" "2")
@@ -547,13 +562,19 @@
     (node "C25" "2")
     (node "C26" "2")
     (node "C27" "2")
+    (node "C29" "2")
+    (node "C30" "2")
+    (node "C31" "2")
+    (node "C32" "2")
+    (node "C33" "2")
+    (node "C34" "2")
+    (node "C35" "2")
     (node "D1" "1")
     (node "D2" "1")
     (node "D3" "1")
     (node "D4" "1")
     (node "D5" "1")
     (node "D6" "1")
-    (node "D7" "2")
     (node "J1" "5")
     (node "J2" "3")
     (node "J2" "5")
@@ -568,7 +589,6 @@
     (node "J9" "2")
     (node "J9" "3")
     (node "J11" "1")
-    (node "L1" "1")
     (node "L4" "2")
     (node "M1" "4")
     (node "M1" "9")
@@ -579,15 +599,15 @@
     (node "M2" "A1")
     (node "M2" "E3")
     (node "M2" "J1")
-    (node "Q1" "1")
     (node "R1" "2")
-    (node "R9" "2")
-    (node "R10" "2")
-    (node "R11" "2")
+    (node "R2" "1")
+    (node "R6" "1")
     (node "R16" "2")
-    (node "R23" "2")
+    (node "R23" "1")
+    (node "R27" "1")
     (node "S1" "2")
-    (node "U1" "2")
+    (node "U1" "5")
+    (node "U1" "9")
     (node "U2" "E7")
     (node "U2" "E6")
     (node "U2" "D7")
@@ -623,31 +643,35 @@
     (node "U3" "44")
     (node "U3" "45")
     (node "U3" "46")
-    (node "U5" "2")
     (node "U5" "5")
-    (node "U5" "9")
+    (node "U5" "6")
+    (node "U5" "7")
+    (node "U5" "8")
+    (node "U5" "15")
+    (node "U5" "16")
+    (node "U5" "17")
+    (node "U6" "1")
     (node "Y1" "2")
-    (node "Y1" "4")
-    (node "R24" "2"))
+    (node "Y1" "4"))
   (net "GPIO_ADC0_3"
-    (node "J8" "4")
+    (node "J8" "5")
     (node "U2" "A7"))
   (net "GPIO_ADC0_4"
-    (node "J8" "5")
+    (node "J8" "6")
     (node "U2" "C6"))
   (net "GPIO_ADC0_6"
-    (node "J8" "6")
+    (node "J8" "7")
     (node "U2" "C5"))
   (net "I2C0_SCL"
     (node "J5" "3")
     (node "J7" "3")
-    (node "U2" "K13")
-    (node "R26" "1"))
+    (node "R26" "1")
+    (node "U2" "K13"))
   (net "I2C0_SDA"
     (node "J5" "4")
     (node "J7" "4")
-    (node "U2" "K14")
-    (node "R25" "1"))
+    (node "R25" "1")
+    (node "U2" "K14"))
   (net "I2C1_SCL"
     (node "J4" "3")
     (node "J6" "3")
@@ -660,20 +684,12 @@
     (node "J8" "14")
     (node "R14" "2")
     (node "U2" "G11"))
-  (net "I_LIM"
-    (node "R23" "1")
-    (node "U5" "4"))
+  (net "I_SET"
+    (node "R2" "2")
+    (node "U1" "3"))
   (net "LPC_CLK_0"
     (node "M2" "F2")
     (node "U2" "M4"))
-  (net "LPC_RTC_CRYSTAL_IN"
-    (node "C17" "1")
-    (node "U2" "A8")
-    (node "Y2" "1"))
-  (net "LPC_RTC_CRYSTAL_OUT"
-    (node "C16" "1")
-    (node "U2" "B7")
-    (node "Y2" "2"))
   (net "LPC_XTAL_CRYSTAL_IN"
     (node "C15" "1")
     (node "U2" "C1")
@@ -693,11 +709,19 @@
   (net "P1_16"
     (node "J6" "9")
     (node "U2" "L5"))
+  (net "P4_5"
+    (node "J8" "2")
+    (node "U2" "C2"))
   (net "P4_6"
     (node "U2" "B1"))
+  (net "P4_7"
+    (node "U2" "F4"))
   (net "P4_8"
-    (node "J8" "1")
+    (node "J8" "20")
     (node "U2" "D2"))
+  (net "P4_10"
+    (node "J8" "19")
+    (node "U2" "L3"))
   (net "P7_0"
     (node "J5" "10")
     (node "U2" "B14"))
@@ -711,7 +735,6 @@
     (node "J8" "18")
     (node "U2" "H3"))
   (net "P8_7"
-    (node "J8" "19")
     (node "U2" "J1"))
   (net "P9_0"
     (node "J4" "10")
@@ -740,7 +763,7 @@
     (node "R17" "1")
     (node "U2" "B11"))
   (net "PB_3"
-    (node "J8" "20")
+    (node "J8" "1")
     (node "U2" "A12"))
   (net "PB_4"
     (node "U2" "B10"))
@@ -750,14 +773,14 @@
   (net "POWER_LED_3V3"
     (node "D1" "2")
     (node "R3" "2"))
-  (net "PWM_MCOA0"
-    (node "J8" "2")
-    (node "U2" "D4"))
   (net "RESET"
+    (node "C16" "1")
     (node "J2" "10")
+    (node "T7" "1")
     (node "R5" "2")
     (node "S1" "1")
-    (node "U2" "C7"))
+    (node "U2" "C7")
+    (node "U6" "2"))
   (net "RF_ANT"
     (node "C18" "1")
     (node "C28" "1")
@@ -765,7 +788,8 @@
   (net "SMPL_LINK_PULLDOWN"
     (node "R16" "1")
     (node "S2" "2")
-    (node "U2" "J2"))
+    (node "U2" "J2")
+    (node "T1" "1"))
   (net "SPIFI_CS"
     (node "M1" "1")
     (node "U2" "C9"))
@@ -784,6 +808,9 @@
   (net "SPIFI_SIO3"
     (node "M1" "7")
     (node "U2" "C14"))
+  (net "SS/TR"
+    (node "C29" "1")
+    (node "U5" "9"))
   (net "SSP0_MISO"
     (node "J4" "6")
     (node "J5" "6")
@@ -817,6 +844,11 @@
     (node "J10" "5")
     (node "U2" "N9")
     (node "U3" "17"))
+  (net "SW"
+    (node "L5" "1")
+    (node "U5" "1")
+    (node "U5" "2")
+    (node "U5" "3"))
   (net "SW_EN"
     (node "J10" "6")
     (node "U2" "H1")
@@ -839,9 +871,6 @@
   (net "USB0_RREF"
     (node "R1" "1")
     (node "U2" "G1"))
-  (net "USB_BOOT_PULLUP"
-    (node "J3" "1")
-    (node "R8" "2"))
   (net "USB_CONN_CASE"
     (node "J1" "6")
     (node "J1" "7")
@@ -849,7 +878,7 @@
     (node "J1" "9")
     (node "J1" "10")
     (node "J1" "11")
-    (node "L1" "2"))
+    (node "R6" "2"))
   (net "USB_IN_D+"
     (node "D6" "3")
     (node "J1" "3")
@@ -858,27 +887,33 @@
     (node "D6" "2")
     (node "J1" "2")
     (node "U2" "F2"))
-  (net "USB_IN_ID"
-    (node "D7" "1")
-    (node "J1" "4")
-    (node "U2" "G2"))
   (net "USB_VDDA"
     (node "C3" "1")
     (node "L2" "2")
     (node "U2" "E3")
     (node "U2" "F3"))
+  (net "V_DCDC"
+    (node "C1" "1")
+    (node "D7" "2")
+    (node "J8" "10")
+    (node "Q1" "4")
+    (node "U1" "8")
+    (node "U5" "10")
+    (node "U5" "11")
+    (node "U5" "12")
+    (node "U5" "13"))
   (net "V_IN"
     (node "J11" "2")
-    (node "Q1" "3"))
+    (node "Q1" "6")
+    (node "Q1" "8")
+    (node "Q1" "5")
+    (node "R27" "2"))
   (net "V_IN_PROTECT"
-    (node "Q1" "2")
-    (node "U5" "6"))
+    (node "D7" "1")
+    (node "Q1" "1")
+    (node "U1" "1"))
   (net "VDDA"
     (node "C4" "1")
     (node "C5" "1")
-    (node "C6" "1")
     (node "L3" "2")
-    (node "U2" "A6"))
-  (net "WAKEUP0"
-    (node "T1" "1")
-    (node "U2" "A9")))
+    (node "U2" "A6")))
