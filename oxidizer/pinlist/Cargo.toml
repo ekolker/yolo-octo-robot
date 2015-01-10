@@ -1,0 +1,9 @@
+[package]
+
+name = "pinlist"
+version = "0.0.1"
+authors = [ "Eric Kolker <e.kolker@gmail.com>" ]
+
+[[bin]]
+
+name = "pinlist"
